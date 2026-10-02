@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-white text-ink-700 font-sans antialiased; font-size: 1.0625rem; line-height: 1.65; color-scheme: light; }
+  h1, h2, h3, h4 { @apply font-display font-semibold text-brand-950; letter-spacing: -0.01em; text-wrap: balance; }
+  :focus-visible { outline: 3px solid theme('colors.brand.400'); outline-offset: 2px; border-radius: 8px; }
+  ::selection { background: theme('colors.sun.200'); }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-16 sm:py-20 lg:py-24; }
+  .eyebrow { @apply inline-flex items-center gap-2 text-[0.8rem] font-extrabold uppercase tracking-[0.14em] text-coral-600; }
+  .card { @apply rounded-xl2 border border-slate-200/70 bg-white shadow-card; }
+  .field-label { @apply mb-1.5 block text-[0.95rem] font-bold text-brand-950; }
+  .field { @apply block w-full min-h-[48px] rounded-2xl border border-slate-300 bg-white px-4 py-3 text-base text-ink-900 placeholder:text-ink-400 transition focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-100; }
+  .field-error { @apply border-coral-500 focus:border-coral-500 focus:ring-coral-100; }
+  .tabular { font-variant-numeric: tabular-nums; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
