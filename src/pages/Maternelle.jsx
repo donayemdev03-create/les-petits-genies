@@ -110,7 +110,7 @@ export default function Maternelle() {
             ))}
           </div>
           <div className="mt-10 flex justify-center">
-            <Button to="/primaire" variant="outline">Découvrir ensuite le primaire <ArrowRight className="h-4 w-4" /></Button>
+            <Button to="/primaire" variant="outline" className="!whitespace-normal text-center">Découvrir ensuite le primaire <ArrowRight className="h-4 w-4" /></Button>
           </div>
         </div>
       </section>
