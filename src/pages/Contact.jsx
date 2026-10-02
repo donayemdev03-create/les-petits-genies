@@ -57,7 +57,7 @@ export default function Contact() {
       <section className="container-x pt-10 sm:pt-14">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {channels.map(({ icon: I, label, value, href, cta, variant, tint }) => (
-            <div key={label} className="card flex flex-col p-5">
+            <div key={label} className="card flex min-w-0 flex-col p-5">
               <div className="flex items-center justify-between">
                 <span className={`grid h-12 w-12 place-items-center rounded-2xl ${tint}`}><I className="h-6 w-6" /></span>
                 <CopyButton text={value} />

@@ -29,18 +29,18 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="text-sm font-extrabold uppercase tracking-[0.14em] !text-sun-300 !font-sans">Navigation</h3>
-          <ul className="mt-5 space-y-2.5">
-            {navLinks.map((l) => <li key={l.to}><Link to={l.to} className="transition hover:text-white">{l.label}</Link></li>)}
+          <ul className="mt-3 sm:mt-5 sm:space-y-2.5">
+            {navLinks.map((l) => <li key={l.to}><Link to={l.to} className="inline-flex min-h-[44px] items-center transition hover:text-white sm:min-h-0">{l.label}</Link></li>)}
           </ul>
         </div>
         <div>
           <h3 className="text-sm font-extrabold uppercase tracking-[0.14em] !text-sun-300 !font-sans">Parents</h3>
-          <ul className="mt-5 space-y-2.5">
-            <li><Link to="/admissions" className="hover:text-white">Inscriptions</Link></li>
-            <li><Link to="/admissions" className="hover:text-white">Frais de scolarité</Link></li>
-            <li><Link to="/vie-scolaire" className="hover:text-white">Menus de la cantine</Link></li>
-            <li><Link to="/vie-scolaire" className="hover:text-white">Transport et garderie</Link></li>
-            <li><Link to="/actualites" className="hover:text-white">Calendrier</Link></li>
+          <ul className="mt-3 sm:mt-5 sm:space-y-2.5">
+            <li><Link to="/admissions" className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0">Inscriptions</Link></li>
+            <li><Link to="/admissions" className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0">Frais de scolarité</Link></li>
+            <li><Link to="/vie-scolaire" className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0">Menus de la cantine</Link></li>
+            <li><Link to="/vie-scolaire" className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0">Transport et garderie</Link></li>
+            <li><Link to="/actualites" className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0">Calendrier</Link></li>
           </ul>
         </div>
         <div>

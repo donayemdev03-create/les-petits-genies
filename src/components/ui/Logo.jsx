@@ -4,7 +4,7 @@ import { site } from '../../config/site'
 /** ✏️ Logo : définissez `site.logo` dans src/config/site.js pour utiliser votre fichier. */
 export default function Logo({ light = false, onClick }) {
   return (
-    <Link to="/" onClick={onClick} className="group inline-flex items-center gap-3" aria-label={`${site.shortName} — accueil`}>
+    <Link to="/" onClick={onClick} className="group inline-flex items-center gap-2.5 min-[360px]:gap-3" aria-label={`${site.shortName} — accueil`}>
       {site.logo ? (
         <img src={site.logo} alt={site.name} className="h-11 w-auto" />
       ) : (
@@ -20,8 +20,8 @@ export default function Logo({ light = false, onClick }) {
             </svg>
           </span>
           <span className="flex flex-col leading-none">
-            <span className={`font-display text-[1.2rem] font-semibold ${light ? 'text-white' : 'text-brand-950'}`}>{site.shortName}</span>
-            <span className={`mt-1 text-[0.68rem] font-extrabold uppercase tracking-[0.16em] ${light ? 'text-sun-300' : 'text-coral-600'}`}>Maternelle · Primaire</span>
+            <span className={`whitespace-nowrap font-display text-[1.05rem] font-semibold min-[360px]:text-[1.2rem] ${light ? 'text-white' : 'text-brand-950'}`}>{site.shortName}</span>
+            <span className={`mt-1 whitespace-nowrap text-[0.6rem] font-extrabold uppercase tracking-[0.12em] min-[360px]:text-[0.68rem] min-[360px]:tracking-[0.16em] ${light ? 'text-sun-300' : 'text-coral-600'}`}>Maternelle · Primaire</span>
           </span>
         </>
       )}

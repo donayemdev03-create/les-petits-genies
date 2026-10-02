@@ -112,7 +112,7 @@ export function QuickContact() {
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {items.map(({ icon: I, label, value, href, cta, tint }) => (
-        <div key={label} className="card flex flex-col p-6">
+        <div key={label} className="card flex min-w-0 flex-col p-6">
           <span className={`grid h-12 w-12 place-items-center rounded-2xl ${tint}`}><I className="h-6 w-6" /></span>
           <p className="mt-4 text-sm text-ink-500">{label}</p>
           <p className="tabular mt-1 flex-1 select-all break-words font-bold text-brand-950">{value}</p>
